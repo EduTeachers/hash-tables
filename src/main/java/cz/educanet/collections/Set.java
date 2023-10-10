@@ -2,7 +2,7 @@ package cz.educanet.collections;
 
 import java.util.List;
 
-public interface Set<T> {
+public interface Set<String> {
 
     /**
      * Adds an item to the collection
@@ -10,7 +10,7 @@ public interface Set<T> {
      * @param item Item to add
      * @return True if item was added successfully, false if item already exists
      */
-    boolean add(T item);
+    boolean add(String item);
 
     /**
      * Removes an item from the collection
@@ -18,7 +18,7 @@ public interface Set<T> {
      * @param item Item to remove
      * @return True if item was removed successfully, false if item wasn't found
      */
-    boolean remove(T item);
+    boolean remove(String item);
 
     /**
      * Searches for the given item, and returns true if found.
@@ -26,13 +26,13 @@ public interface Set<T> {
      * @param item To search for
      * @return Found element
      */
-    boolean contains(T item);
+    boolean contains(String item);
 
     /**
      * Converts the collection to a List and returns it
      *
      * @return List
      */
-    List<T> toList();
+    List<String> toList();
 
 }
