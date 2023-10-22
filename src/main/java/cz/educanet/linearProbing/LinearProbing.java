@@ -20,6 +20,10 @@ public class LinearProbing {
         return key.hashCode() % this.maxSize;
     }
 
+    public int getCurrentSize() {
+        return currentSize;
+    }
+
     public boolean put(String key, String value) {
 
         int hash = hash(key);
